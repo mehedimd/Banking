@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a class="active" href="#news">Dashboard</a></li> 
+          </ul>
+    </nav>
+
+    <div class="welcome">
+        <h2>Wellcome to your <span ">Dashboard !</span></h2>
+    </div>
+
+    <div class="container">
+
+        <div class="deposit">
+            <h3>Deposit Blance</h5>
+                <br>
+            <p id="depositBlance">10.00 </p>
+        </div>
+
+        <div class="withdraw">
+            <h3>withdraw Blance</h5>
+                <br>
+            <p id="withdrawBlance">10.00</p>
+        </div>
+
+        <div class="total">
+            <h3>Total Blance</h5>
+                <br>
+            <p id="totalBlance">100.00</p>
+        </div>
+
+    </div>
+
+    <div class="inputSection">
+        <div class="depositNow">
+            <h2>Deposit Now !</h2>
+            <br>
+            <input id="depositField" type="text" placeholder="Enter Deposit Amount..">    
+            <button id="depositBtn" type="submit">Deposit</button>
+        </div>
+        <div class="withdrawNow">
+            <h2>Withdraw Here !</h2>
+            <br>
+            <input type="text"  id="withdrawField" placeholder="Enter Withdraw Amount..">
+            <button id="withdrawBtn" type="button">Withdraw</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>All rights reserved &copy; <span>Mehedi Hasan</span></p>
+    </footer>
+
+    <script src="details.js"></script>
+</body>
+</html>

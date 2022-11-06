@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: tomato;
+
+  }
+
+  .welcome{
+    text-align: center;
+    padding: 16px;
+
+  }
+  .welcome span{
+    color: tomato;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .container{
+    padding: 25px ;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .deposit, .withdraw, .total{
+    width: 30%;
+    color:white;
+    padding: 30px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .deposit{
+    background-color: rgb(211, 0, 183);
+  }
+  .withdraw{
+    background-color: darkviolet;
+  }
+  .total{
+    background-color: rgb(56, 0, 211);
+  }
+
+  .inputSection{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    margin-bottom: 40px;
+  }
+  .depositNow, .withdrawNow {
+    width: 45%;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 50px;
+    
+  }
+ input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    
+  }
+button{
+    padding: 8px 16px;
+    border-radius: 25px;
+    background-color: tomato;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+  background-color: #111;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 25px;
+
+}
+footer span{
+  color: tomato;
+  font-weight: bold;
+}
+
+/* Media Query section */
+
+@media only screen and (max-width:767px){
+  .container{
+    flex-direction: column;
+  }
+  .deposit, .withdraw, .total{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .inputSection{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .depositNow, .withdrawNow {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  footer{
+    padding: 8px;
+  }
+}

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+    
+
+}
+form{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 40px;
+    width: 400px;
+    
+    
+}
+input,button{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 16px;
+}
+
+button{
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
