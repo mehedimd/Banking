@@ -16,7 +16,7 @@ document.querySelector('#depositBtn').addEventListener('click', function(){
     let total = document.querySelector('#totalBlance');
     let totalText = total.innerText;
     let getTotal = parseFloat(totalText);
-    let subTotal = getTotal + deposit;
+    let subTotal = getTotal + depositValue;
     let subTotalAmount = subTotal.toFixed(2);
 
 
